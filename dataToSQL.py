@@ -1213,6 +1213,9 @@ class SQLdataselect(QWidget, sqldataselect.Ui_Form):
     def data_IP50G_select(self):
         pass
 
+    def data_IP50G_load(self):
+        pass
+
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
