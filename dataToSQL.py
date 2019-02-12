@@ -1055,7 +1055,7 @@ class SQLdataselect(QWidget, sqldataselect.Ui_Form):
     def __init__(self):
         super(SQLdataselect, self).__init__()
         self.setupUi(self)
-        self.setWindowTitle('测试性能数据查询V1.0.4')
+        self.setWindowTitle('测试性能数据查询V1.0.5')
         self.setWindowIcon(QIcon('load.ico'))
         self.data_num = 0
         now_date = time.strftime('%Y-%m-%d', time.localtime())
@@ -1210,6 +1210,8 @@ class SQLdataselect(QWidget, sqldataselect.Ui_Form):
             wbk.save('.\\导出数据\\' + '导出数据-%s.xls' % cur_time)
             QMessageBox.information(self, '提示', '导出数据成功！')
 
+    def data_IP50G_select(self):
+        pass
 
 
 if __name__ == "__main__":
